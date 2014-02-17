@@ -44,7 +44,7 @@ if (!String.prototype.at) {
 					len = 2;
 				}
 			}
-			return string.substr(index, len);
+			return string.slice(index, index + len);
 		};
 		if (defineProperty) {
 			defineProperty(String.prototype, 'at', {
